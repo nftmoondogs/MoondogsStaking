@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable tailwindcss/classnames-order */
 /* eslint-disable react/no-unescaped-entities */
-
+import CustomScroll from 'react-custom-scroll';
 import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
 import WOOFAbi from '../contract/WOOF.json'
@@ -9,6 +9,7 @@ import MoondogsAbi from '../contract/Moondogs.json'
 import MoondogStakingAbi from '../contract/MoondogStaking.json'
 import { BigNumber } from 'ethers/lib/ethers'
 import { formatUnits } from 'ethers/lib/utils'
+
 
 interface NFTData {
   id: number
@@ -267,6 +268,7 @@ function App() {
         <div className="text-center">
           <p className="text-xl text-gray-400 mb-4">
             Click "Stake" to Stake your MoonDogs NFT Please note that once staked your NFT will be locked for 1 Month before you can UnStake it.
+            This Month's royality pool is set to 400 WCORE, 400 CORE / 5555 Total Supply = 0.72 CORE per month if you stake 1 Moondogs
           </p>
 
           {currentAccount ? (
@@ -324,5 +326,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
