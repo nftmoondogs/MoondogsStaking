@@ -18,7 +18,7 @@ interface NFTData {
 
 const WOOFAddress = '0xC11c32d243c64E8318557bBFa6966C7C3306d26e'
 const MoondogsAddress = '0x48C3d70b7c80230ed4B039Fc155BB51780b41759'
-const MoondogStakingAddress = '0x310388CBaAab5c6DB2548F1faFf4622B229E02b7'
+const MoondogStakingAddress = '0x30f864DF34602e715D78d324BBE4FBED7C7C0d85'
 
 const getIpfsUrl = (uri: string) => {
   const splited = uri.replace('ipfs://', '').split('/')
@@ -105,7 +105,7 @@ function App() {
         const receipt = await tx.wait()
 
         console.log(
-          `Transaction confirmed: https://scan.test.btcs.network/tx/${tx.hash}`
+          `Transaction confirmed: https://scan.coredao.org/tx/${tx.hash}`
         )
 
         const timestamp = (await provider.getBlock(receipt.blockHash)).timestamp
@@ -145,7 +145,7 @@ function App() {
         await tx.wait()
 
         console.log(
-          `Transaction confirmed: https://scan.test.btcs.network/tx/${tx.hash}`
+          `Transaction confirmed: https://scan.coredao.org/tx/${tx.hash}`
         )
 
         setNfts(

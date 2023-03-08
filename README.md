@@ -83,7 +83,7 @@ npm run dev
         await tx.wait()
 
         console.log(
-          `Transaction confirmed: https://scan.test.btcs.network/tx/${tx.hash}`
+          `Transaction confirmed: https://scan.coredao.org/tx/${tx.hash}`
         )
       } else {
         console.log('Ethereum object does not exist')
