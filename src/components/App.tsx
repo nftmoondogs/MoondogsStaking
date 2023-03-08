@@ -1,7 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable tailwindcss/classnames-order */
 /* eslint-disable react/no-unescaped-entities */
-import CustomScroll from 'react-custom-scroll';
 import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
 import WOOFAbi from '../contract/WOOF.json'
